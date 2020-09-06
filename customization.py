@@ -6,3 +6,6 @@ r_user_agent='your_user_agent'
 #Instagram Custom
 i_email='your_instagram_email'
 i_password='your_instagram_password'
+
+#ChromeDriver
+chromePath='chrome_driver_path'

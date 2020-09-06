@@ -10,7 +10,7 @@ chrome_options=webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--incognito")
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-chromeBrowser = webdriver.Chrome("C:\P.S\chromedriver_win32\chromedriver.exe", options=chrome_options)
+chromeBrowser = webdriver.Chrome(chromePath, options=chrome_options)
 
 
 def steam_scraper(username):
