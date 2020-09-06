@@ -78,8 +78,8 @@ def quick_search(username):
     except:
         sofUser_tag='None'
     try:
-    chromeBrowser.find_element_by_xpath('/html/body/div[4]/div[2]/div/div[3]/div[1]/div[1]/div[2]/a').click()
-    WebDriverWait(chromeBrowser, 10).until(lambda d: d.find_element_by_xpath('/html/body/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div[2]'))
+        chromeBrowser.find_element_by_xpath('/html/body/div[4]/div[2]/div/div[3]/div[1]/div[1]/div[2]/a').click()
+        WebDriverWait(chromeBrowser, 10).until(lambda d: d.find_element_by_xpath('/html/body/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div/div[1]/div/div[2]'))
     except:
         placeholder=True
     try:
