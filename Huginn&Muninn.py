@@ -1,0 +1,49 @@
+print('''\
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMh+:/+yhhdNMMMMMMMMMMMMMMMMMMMMMMMMmdhso+:/+dMMMMMMMMMM
+MMMMMMMMMMMms-```.`..:yMMMMMMMMMMMMMMMMMMMh/-......`omMMMMMMMMMMM
+MMMMMMMMMMMMMN-``. ``  /MMMMMMMMMMMMMMMMd:     ``.-mMMMMMMMMMMMMM
+MMMMMMMMMMMMMM/         mMMMMMMMMMMMMMMN.         /MMMMMMMMMMMMMM
+MMMMMMMMMMMMMM-         hMMMMMMMMMMMMMMd          -MMMMMMMMMMMMMM
+MMMMMMMMMMMMMN`         oMMMMMMMMMMMMMM+           yMMMMMMMMMMMMM
+MMMMMMMMMMMMMo          `NMMMMMMMMMMMMN.           +MMMMMMMMMMMMM
+MMMMMMMMMMMMm`           :mMMMMMMMMMMM/            `hMMMMMMMMMMMM
+MMMMMMMMMMNh.             .oNMMMMMMMh+           `  .yNMMMMMMMMMM
+MMMMMMMMMN/`    ``        . -dMMMMN+```          `   ./NMMMMMMMMM
+MMMMMMMMMs `     `        .  `mMMN:   .          .   `-oMMMMMMMMM
+MMMMMMMMMs .     `       `    :MM+      .        .   ``sMMMMMMMMM
+MMMMMMMMMm``     `       .     hN`      :       `    ./NMMMMMMMMM
+MMMMMMMMMMh:`            ..    :s      ..           ./NMMMMMMMMMM
+MMMMMMMMMMMMd.            -`    -     ..           -dMMMMMMMMMMMM
+MMMMMMMMMMMMMs             .-`  .   ..`            oMMMMMMMMMMMMM
+MMMMMMMMMMMMMm`      `` `    .`  ..``     ``    -`-NMMMMMMMMMMMMM
+MMMMMMMMMMMMMMdh+   omdhh:   .``-...   .+yNd/  `NyhMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMN. +MMMMMo .y:/:-:..-``dMMMMN/ oMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMM/oMMMMMMs+NMMMMMMNNNs/MMMMMMN/sMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMNMNy:NMMMMMm/dMMMMMMMMMMMosNMMMMMN-yNNNNMMMMMMMMMMMM
+MMMMMMMMMMMNs+o///ohMmso::++MMMMMMMMds+:+/hMMms+:oooomMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMNMMmMMMMMMMMMMMMMMMmMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+''')
+from detailed import *
+from quick import *
+
+
+
+print("     Which mod you want to use? ")
+searchtype=int(input("1-Quick\n2-Detailed \n"))
+
+if searchtype==2:
+    username=input("Please specify a username ")
+    steam_scraper(username)
+    reddit_scraper(username)
+    instagram_scraper(username)
+    github_scraper(username)
+    sof_scraper(username)
+elif searchtype==1:
+    username=input("Please specify a username ")
+    quick_search(username)
