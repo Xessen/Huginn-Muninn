@@ -14,7 +14,7 @@ Investigate social media platforms with Odin's Ravens by given username.
 <h4>1-)Go to "https://chromedriver.chromium.org/"</h4>
 <h4>2-)Download the latest stable version</h4>
 <h4>3-)Unzip the Zip file</h4>
-<h4>4-)Get the Path of ChromeDriver</h4>
+<h4>4-)Get the Path of chromedriver.exe(don't forget to add ".exe")</h4>
 
 
 <h1>Installation</h3>
