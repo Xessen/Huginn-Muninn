@@ -68,7 +68,7 @@ def quick_search(username):
         if str(Name.text.lower())==username.lower():
             placeholder=True
     except:
-        return None
+        placeholder=False
     try:
         sofLocation=chromeBrowser.find_element_by_class_name('user-location').text
     except:
